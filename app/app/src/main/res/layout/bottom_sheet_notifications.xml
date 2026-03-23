@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bottom_sheet_notifications.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- ── Drag handle ────────────────────────────────────── -->
+    <View
+        android:layout_width="48dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="#DDDDDD" />
+
+    <!-- ── Header row ─────────────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp">
+
+        <!-- Title + unread chip -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_notifications"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="?attr/colorOnSurface" />
+
+            <TextView
+                android:id="@+id/tvSheetUnreadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Mark all read text button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMarkAllRead"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/primary_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_mark_all_read"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Divider under header -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        android:layout_marginBottom="4dp" />
+
+    <!-- ── Loading indicator ──────────────────────────── -->
+    <ProgressBar
+        android:id="@+id/progressSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginVertical="8dp" />
+
+    <!-- ── Empty state ────────────────────────────────── -->
+    <TextView
+        android:id="@+id/tvSheetEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_no_notifications"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#9E9E9E"
+        android:padding="24dp"
+        android:visibility="gone" />
+
+    <!-- ── Notification list — capped at 240dp so See All always visible ── -->
+    <!-- ── Notification list — FIXED height, internal scroll only ── -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNotificationsSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never" />
+
+    </FrameLayout>
+
+    <!-- Divider — always separates list from See All -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0" />
+
+    <!-- ── See All button — always visible ────────────── -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSeeAll"
+        android:layout_width="match_parent"
+        android:textColor="@color/primary_blue"
+        android:layout_height="52dp"
+        android:layout_margin="16dp"
+        android:text="@string/btn_see_all_notifications"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+</LinearLayout>

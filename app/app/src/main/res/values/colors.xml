@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- colors.xml -->
+<resources>
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Brand Colors -->
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_blue_dark">#1976D2</color>
+    <color name="primary_blue_light">#BBDEFB</color>
+
+    <!-- UI Colors -->
+    <color name="background_gray">#F8F9FA</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+
+    <color name="orange_warning">#FF9800</color>
+
+    <!-- Bottom Nav Colors -->
+    <color name="bottom_nav_active">#2196F3</color>
+    <color name="bottom_nav_inactive">#9E9E9E</color>
+
+    <!-- Notification Badge -->
+    <color name="notification_red">#F44336</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#888888</color>
+
+    <color name="green_success">#4CAF50</color>
+    <color name="red_error">#F44336</color>
+</resources>

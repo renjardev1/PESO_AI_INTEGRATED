@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- nav_onboarding.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_onboarding"
+    app:startDestination="@id/onboardingStep1Fragment">
+
+    <!-- Step 1 of 3: Personal Info -->
+    <fragment
+        android:id="@+id/onboardingStep1Fragment"
+        android:name="com.example.pesoai.ui.onboarding.OnboardingStep1Fragment"
+        android:label="OnboardingStep1Fragment">
+        <action
+            android:id="@+id/action_onboardingStep1_to_onboardingStep2"
+            app:destination="@id/onboardingStep2Fragment" />
+    </fragment>
+
+    <!-- Step 2 of 3: Financial Info + Monthly Budget + Savings Target
+         (merged from old Steps 2 & 3) -->
+    <fragment
+        android:id="@+id/onboardingStep2Fragment"
+        android:name="com.example.pesoai.ui.onboarding.OnboardingStep2Fragment"
+        android:label="OnboardingStep2Fragment">
+        <action
+            android:id="@+id/action_onboardingStep2_to_onboardingStep3"
+            app:destination="@id/onboardingStep3Fragment" />
+    </fragment>
+
+    <!-- Step 3 of 3: Category Selection (with custom add) + API Submit
+         (merged from old Steps 3 & 4; replaces both OnboardingStep3Fragment
+          budget-setup and OnboardingStep4Fragment categories) -->
+    <fragment
+        android:id="@+id/onboardingStep3Fragment"
+        android:name="com.example.pesoai.ui.onboarding.OnboardingStep3Fragment"
+        android:label="OnboardingStep3Fragment" />
+
+</navigation>

@@ -1,0 +1,439 @@
+<resources>
+    <!-- strings.xml -->
+    <string name="app_name">PESO AI</string>
+    <string name="app_logo">App Logo</string>
+    <string name="welcome_icon">Welcome Icon</string>
+    <string name="track_icon">Track Icon</string>
+    <string name="ai_icon">AI Icon</string>
+    <string name="back">Back</string>
+    <string name="budget_icon">Budget Icon</string>
+    <string name="categories_icon">Categories Icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 4 string additions
+     Merge these entries into:
+       res/values/strings.xml
+     ========================================================= -->
+
+    <!-- Dashboard -->
+    <string name="error_user_not_found">User not found</string>
+    <string name="dashboard_budget_period_label">Budget / %s</string>
+    <string name="dashboard_spent_percentage">%d%% of budget</string>
+    <string name="dashboard_remaining_percentage">%d%% left</string>
+    <string name="dashboard_over_budget_warning">⚠️ Over budget by ₱%s</string>
+
+    <!-- Transaction dialogs -->
+    <string name="error_invalid_amount">Please enter a valid amount</string>
+    <string name="error_select_category">Please select a category</string>
+    <string name="hint_category_name">Category name</string>
+    <string name="dialog_title_new_category">New Category</string>
+    <string name="dialog_title_delete_transaction">Delete Transaction?</string>
+    <string name="dialog_subtitle_cannot_undo">This cannot be undone</string>
+    <string name="dialog_msg_delete_transaction">Are you sure you want to delete this transaction? This action cannot be undone.</string>
+    <string name="transaction_deleted">Transaction deleted</string>
+    <string name="error_category_name_empty">Please enter a name</string>
+
+    <!-- Buttons (reuse across phases) -->
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 5 string additions
+     Merge these entries into:
+       res/values/strings.xml
+     ========================================================= -->
+
+    <!-- Goals screen -->
+    <string name="goals_active_count">%d active goals</string>
+    <string name="contribution_success">✅ ₱%s added to your goal!</string>
+    <string name="contribute_remaining_hint">Available budget: ₱%s</string>
+
+    <!-- Goal dialogs -->
+    <string name="error_goal_name_required">Goal name is required</string>
+    <string name="error_target_amount_required">Please enter a valid target amount</string>
+    <string name="dialog_title_delete_goal">Delete Goal?</string>
+    <string name="dialog_msg_delete_goal">Are you sure you want to delete this goal? This action cannot be undone.</string>
+    <string name="goal_deleted">Goal deleted</string>
+
+    <!-- Goal action sheet items -->
+    <string name="action_edit_goal">✏️ Edit Goal</string>
+    <string name="action_contribute">💰 Add Contribution</string>
+    <string name="action_delete_goal">🗑️ Delete Goal</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 6 string additions
+     Merge these entries into:
+       res/values/strings.xml
+     ========================================================= -->
+
+    <!-- Profile screen -->
+    <string name="not_set">Not set</string>
+    <string name="member_since_default">January 2024</string>
+    <string name="profile_updated">Profile updated</string>
+    <string name="profile_picture_updated">Profile picture updated</string>
+    <string name="error_load_profile">Failed to load profile</string>
+    <string name="error_update_profile">Failed to update profile</string>
+    <string name="error_upload_picture">Failed to upload picture</string>
+    <string name="error_load_image">Failed to load image</string>
+    <string name="error_generic">Error: %s</string>
+
+    <!-- Profile edit dialog -->
+    <string name="error_first_name_required">First name is required</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_username_required">Username is required</string>
+    <string name="error_username_min_length">Username must be at least 3 characters</string>
+
+    <!-- Settings screen -->
+    <string name="settings_last_backup">Last backup: %s</string>
+    <string name="settings_never_backed_up">Never backed up</string>
+    <string name="coming_soon">Coming soon!</string>
+    <string name="budget_updated">Budget updated</string>
+    <string name="error_update_budget">Failed to update budget</string>
+    <string name="period_updated">Period set to %s</string>
+    <string name="error_update_period">Failed to update period</string>
+    <string name="password_changed">Password changed successfully</string>
+    <string name="error_change_password">Failed to change password</string>
+    <string name="backup_completed">Backup completed successfully!</string>
+
+    <!-- Password dialog -->
+    <string name="error_old_password_required">Enter old password</string>
+    <string name="error_password_min_length">At least 6 characters</string>
+    <string name="error_passwords_no_match">Passwords don\'t match</string>
+    <string name="error_password_required_confirm">Enter your password to confirm</string>
+    <string name="error_feedback_required">Please enter your feedback</string>
+
+    <!-- Logout dialog -->
+    <string name="dialog_title_logout">Logout</string>
+    <string name="dialog_msg_logout">Are you sure you want to log out?</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_save_changes">Save Changes</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 7 string additions
+     Merge these entries into:
+       res/values/strings.xml
+     ========================================================= -->
+
+    <!-- Analytics screen -->
+    <string name="analytics_under_budget">Under budget</string>
+    <string name="analytics_over_budget">Over by ₱%s</string>
+    <string name="analytics_daily_label">Daily Spending</string>
+
+    <!-- Analytics filter dialog -->
+    <string name="filter_this_month">This Month</string>
+    <string name="filter_last_month">Last Month</string>
+    <string name="filter_last_3_months">Last 3 Months</string>
+    <string name="filter_custom_range">Custom Range…</string>
+    <string name="dialog_title_filter_period">Select Period</string>
+    <string name="error_end_before_start">End date must be after start date</string>
+    <string name="analytics_empty_categories">No spending data for this period</string>
+
+    <!-- Chat screen -->
+    <string name="ai_thinking">AI is thinking…</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="error_delete_history">Failed to delete history</string>
+
+    <!-- Quick prompts -->
+    <string name="quick_prompt_spending">💰 How much did I spend this month?</string>
+    <string name="quick_prompt_budget">💡 Give me budget advice</string>
+    <string name="quick_prompt_savings">🎯 Help me reach my savings goals</string>
+
+    <!-- New chat dialog -->
+    <string name="dialog_title_new_chat">Start New Chat?</string>
+    <string name="dialog_msg_new_chat">Would you like to save the current conversation before starting a new one?</string>
+    <string name="btn_save_and_new">Save &amp; New</string>
+    <string name="btn_discard">Discard</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 8 string additions
+     Merge these entries into:
+       res/values/strings.xml
+     ========================================================= -->
+
+    <!-- App Lock screen -->
+    <string name="error_pin_length">PIN must be 4–6 digits</string>
+    <string name="error_incorrect_pin">Incorrect PIN. Please try again.</string>
+    <string name="error_verification_failed">Verification failed. Check your connection.</string>
+    <string name="btn_unlock">Unlock</string>
+    <string name="title_app_locked">App Locked</string>
+    <string name="subtitle_app_locked">Enter your PIN to continue</string>
+
+    <!-- MainActivity top bar -->
+    <string name="notifications_coming_soon">Notifications coming soon</string>
+    <string name="content_desc_notifications">Notifications</string>
+    <string name="content_desc_profile">Profile</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     MERGE ALL OF THESE INTO: res/values/strings.xml
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+    <!-- ── AUTH ──────────────────────────────────────────────────────────────── -->
+    <string name="error_username_email_required">Username or email is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_last_name_required">Last name is required</string>
+    <string name="error_passwords_do_not_match">Passwords do not match</string>
+
+    <!-- ── ONBOARDING ─────────────────────────────────────────────────────────── -->
+    <string name="onboarding_exit_title">Exit Setup?</string>
+    <string name="onboarding_exit_message">Your progress will not be saved. Are you sure you want to exit?</string>
+    <string name="onboarding_continue_setup">Continue Setup</string>
+    <string name="onboarding_exit">Exit</string>
+    <string name="onboarding_step_1_of_3">Step 1 of 3</string>
+    <string name="onboarding_age_error">Please enter a valid age (18–120)</string>
+    <string name="onboarding_occupation_error">Occupation is required</string>
+    <string name="onboarding_step_2_of_3">Step 2 of 3</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_income_error">Please enter a valid monthly income</string>
+    <string name="onboarding_budget_error">Please enter a valid monthly budget</string>
+    <string name="onboarding_savings_negative_error">Savings goal cannot be negative</string>
+    <string name="onboarding_savings_exceed_error">Savings goal cannot exceed monthly income</string>
+    <string name="onboarding_step_3_of_3">Step 3 of 3</string>
+    <string name="onboarding_finish_setup">Finish Setup</string>
+    <string name="onboarding_choose_icon">Choose Icon</string>
+    <string name="onboarding_category_name_hint">Category name</string>
+    <string name="onboarding_add_custom_category">Add Custom Category</string>
+    <string name="onboarding_add">Add</string>
+    <string name="onboarding_category_name_required">Category name is required</string>
+    <string name="onboarding_category_already_added">"%s" has already been added</string>
+    <string name="onboarding_category_is_default">"%s" is already a default category</string>
+    <string name="onboarding_setup_failed">Setup failed (Error %d). Please try again.</string>
+    <string name="onboarding_session_expired">Session expired. Please log in again.</string>
+    <string name="onboarding_complete_success">Setup complete! Welcome to PESO AI.</string>
+
+    <!-- ── AI CHAT LAYOUT (fragment_ai_chat.xml ULTRA RULE fixes) ─────────────── -->
+    <string name="ai_robot_emoji">🤖</string>
+    <string name="ai_advisor_title">AI Advisor</string>
+    <string name="btn_history">History</string>
+    <string name="btn_new_chat">New</string>
+    <string name="mode_label">Mode:</string>
+    <string name="mode_general">⚡ General</string>
+    <string name="mode_advanced">📊 Advanced</string>
+    <string name="chat_empty_emoji">👋</string>
+    <string name="chat_empty_title">Start a conversation</string>
+    <string name="chat_empty_subtitle">Ask me about your spending, savings,\nor get personalized financial advice</string>
+    <string name="chat_input_hint">Ask your AI advisor…</string>
+    <string name="btn_stop_description">Stop generation</string>
+    <string name="btn_send_description">Send message</string>
+
+    <!-- ── HISTORY PANEL (new views added to fragment_ai_chat.xml) ───────────── -->
+    <string name="history_panel_title">Conversation History</string>
+    <string name="history_empty">No conversation history yet</string>
+
+    <!-- ── COMMON (check for duplicates before adding) ───────────────────────── -->
+    <!-- Only add 'cancel' if NOT already in strings.xml -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Merge into res/values/strings.xml -->
+    <string name="analytics_spending_label">Spending</string>
+    <string name="analytics_income_label">Income</string>
+
+    <!-- ══════════════════════════════════════════════════════════════════════════
+     PESO AI — strings.xml ADDITIONS for Backup + Restore Feature
+     ADD these entries into your existing res/values/strings.xml
+     ══════════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Backup + Restore -->
+    <string name="restore_completed">Data restored successfully</string>
+    <string name="dialog_title_restore">Restore Data</string>
+    <string name="dialog_msg_restore">This will overwrite your current data with the saved backup. Are you sure?</string>
+    <string name="btn_restore">Restore</string>
+
+    <!-- ══════════════════════════════════════════════════════════════════════════
+     PESO AI — strings.xml ADDITIONS for App Lock Feature
+     ADD these entries into your existing res/values/strings.xml
+     ══════════════════════════════════════════════════════════════════════════ -->
+
+    <!-- App Lock — Settings -->
+    <string name="dialog_title_set_pin">Set App Lock PIN</string>
+    <string name="dialog_msg_set_pin">Choose a 4–6 digit PIN to secure the app.</string>
+    <string name="hint_enter_pin">Enter PIN (4–6 digits)</string>
+    <string name="hint_confirm_pin">Confirm PIN</string>
+    <string name="label_enable_biometric">Also allow fingerprint / face unlock</string>
+    <string name="btn_set_pin">Set PIN</string>
+    <string name="app_lock_enabled_msg">App Lock enabled</string>
+    <string name="app_lock_disabled_msg">App Lock disabled</string>
+    <string name="dialog_title_disable_lock">Disable App Lock</string>
+    <string name="dialog_msg_disable_lock">Are you sure you want to disable the app lock?</string>
+    <string name="btn_disable">Disable</string>
+    <string name="error_pin_mismatch">PINs do not match</string>
+    <string name="error_pin_too_short">PIN must be at least 4 digits</string>
+
+    <!-- App Lock — Lock Screen (AppLockActivity) -->
+    <string name="label_unlock_with_biometric">Unlock with biometrics</string>
+    <string name="biometric_prompt_title">Unlock PESO AI</string>
+    <string name="biometric_prompt_subtitle">Use your fingerprint or face to unlock</string>
+    <string name="biometric_prompt_negative">Use PIN</string>
+    <string name="error_biometric_unavailable">Biometrics unavailable. Please enter your PIN.</string>
+
+    <!-- Paste these <string> entries into your existing res/values/strings.xml -->
+    <!-- DO NOT create a separate file — merge into strings.xml -->
+    <!-- Screen title -->
+    <string name="title_budget_categories">Budget Categories</string>
+
+    <!-- Toolbar nav -->
+    <string name="btn_back">Back</string>
+
+    <!-- List states -->
+    <string name="label_no_categories">No categories yet. Tap Add to create one.</string>
+    <string name="label_default_category">Default</string>
+
+    <!-- Buttons -->
+    <string name="btn_add_category">Add Category</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit_category">Edit category</string>
+    <string name="btn_delete_category">Delete category</string>
+    <string name="btn_pick_icon">Pick Icon</string>
+    <string name="btn_pick_color">Pick Colour</string>
+
+    <!-- Dialog titles -->
+    <string name="dialog_title_add_category">Add Category</string>
+    <string name="dialog_title_edit_category">Edit Category</string>
+    <string name="dialog_title_delete_category">Delete Category</string>
+    <string name="dialog_title_pick_icon">Choose Icon</string>
+    <string name="dialog_title_pick_color">Choose Colour</string>
+
+    <!-- Dialog messages -->
+    <string name="dialog_msg_delete_category">Delete \"%1$s\"? Existing transactions with this category will not be affected.</string>
+
+    <!-- Merge these into your existing res/values/strings.xml -->
+    <!-- DO NOT create a separate file -->
+
+    <!-- Screen / section titles -->
+    <string name="title_notifications">Notifications</string>
+    <string name="title_notification_settings">Notification Settings</string>
+    <string name="title_recent_notifications">Recent Notifications</string>
+
+    <!-- Unread count labels -->
+    <string name="label_unread_count">%1$d unread</string>
+    <string name="label_no_unread">All caught up</string>
+
+    <!-- Empty state -->
+    <string name="label_no_notifications">No notifications yet.</string>
+
+    <!-- Settings labels -->
+    <string name="label_budget_alerts">Budget Alerts</string>
+    <string name="label_budget_alerts_desc">Notify when you approach your budget limit</string>
+    <string name="label_daily_reminders">Daily Reminders</string>
+    <string name="label_daily_reminders_desc">Get a daily nudge to log your expenses</string>
+    <string name="label_push_notifications">Push Notifications</string>
+    <string name="label_push_notifications_desc">Receive notifications on this device</string>
+
+    <!-- Buttons -->
+    <string name="btn_mark_all_read">Mark all read</string>
+    <string name="btn_see_all_notifications">See all notifications</string>
+
+    <!-- Forgot Password screen -->
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="forgot_password_step1_subtitle">Enter your registered email address and we\'ll send you a 6-digit reset code.</string>
+    <string name="forgot_password_step2_subtitle">Enter the 6-digit code sent to %1$s and choose a new password.</string>
+    <string name="forgot_password_resent">Reset code resent. Check your email.</string>
+
+    <!-- Input hints -->
+    <string name="hint_email">Email address</string>
+    <string name="hint_otp">6-digit code</string>
+    <string name="hint_new_password">New password</string>
+    <string name="hint_confirm_password">Confirm new password</string>
+
+    <!-- Buttons -->
+    <string name="btn_send_reset_code">Send Reset Code</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_resend_code">Didn\'t receive it? Resend code</string>
+
+    <!-- Errors -->
+    <string name="error_valid_email_required">Please enter a valid email address.</string>
+    <string name="error_otp_invalid">Please enter the 6-digit code from your email.</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 2: Risk-Based Budget Validation
+     ========================================================= -->
+
+    <!-- Shared button labels -->
+    <string name="btn_ok">OK</string>
+
+    <!-- Budget blocked dialog (Conservative) -->
+    <string name="budget_blocked_title">Budget Limit Reached</string>
+    <string name="budget_blocked_subtitle">Conservative mode active</string>
+    <string name="budget_blocked_body_hint">To allow spending past your limit, change your Risk Tolerance to Moderate or Aggressive in Budget Settings.</string>
+
+    <!-- Budget warning dialog (Moderate) -->
+    <string name="budget_warning_title">Spending Warning</string>
+    <string name="budget_warning_subtitle">You\'re approaching your limit</string>
+    <string name="budget_warning_proceed">Proceed Anyway</string>
+
+    <!-- Budget dialog row labels -->
+    <string name="budget_label_monthly">Monthly budget</string>
+    <string name="budget_label_spent">Currently spent</string>
+    <string name="budget_label_threshold">Warning threshold</string>
+    <string name="budget_label_this_amount">This transaction</string>
+    <string name="budget_label_new_total">New total would be</string>
+
+    <!-- Risk tolerance dialog (Settings) -->
+    <string name="settings_risk_tolerance_title">Spending Mode</string>
+    <string name="settings_risk_tolerance_subtitle">Controls how the app responds to overspending</string>
+    <string name="risk_strict">🔒 Strict — Block at 100% budget</string>
+    <string name="risk_balanced">⚖️ Balanced — Warn at threshold, block at hard limit</string>
+    <string name="risk_flexible">🚀 Flexible — Warn only when over budget</string>
+
+    <!-- Balanced hard limit row -->
+    <string name="settings_balanced_hard_limit_title">Balanced Hard Limit</string>
+    <string name="settings_balanced_hard_limit_hint">Block spending beyond this amount</string>
+
+    <!-- Budget dialog label additions -->
+    <string name="budget_label_hard_limit">Hard limit</string>
+
+    <!-- =========================================================
+     PESO AI — Phase 3: Recurring Transactions + Notifications
+     ========================================================= -->
+
+    <!-- Recurring screen -->
+    <string name="recurring_title">Recurring</string>
+    <string name="recurring_subtitle">Manage automatic expenses</string>
+    <string name="recurring_active_label">Active Recurring</string>
+    <string name="recurring_empty_title">No recurring transactions</string>
+    <string name="recurring_empty_hint">Tap + to add a recurring expense</string>
+    <string name="recurring_add_btn">Add recurring transaction</string>
+
+    <!-- Recurring dialog -->
+    <string name="recurring_dialog_add_title">New Recurring</string>
+    <string name="recurring_dialog_edit_title">Edit Recurring</string>
+    <string name="recurring_hint_frequency">Frequency</string>
+    <string name="recurring_hint_start_date">Start Date</string>
+    <string name="recurring_hint_reminder">Remind me before due date</string>
+
+    <string name="recurring_delete_title">Cancel Recurring?</string>
+    <string name="recurring_delete_message">This recurring transaction will be cancelled and will no longer auto-create expenses.</string>
+
+    <!-- Shared input hints (used by dialog_add_transaction + dialog_add_recurring) -->
+    <string name="hint_amount">Amount</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_description_optional">Description (optional)</string>
+
+    <!-- Upcoming recurring preview (TransactionFragment) -->
+    <string name="upcoming_recurring_label">Upcoming Recurring</string>
+    <string name="upcoming_recurring_manage">Manage</string>
+    <string name="recurring_created_toast">Recurring transaction created. First expense records at midnight.</string>
+
+    <!-- Recurring Transaction Actions -->
+    <string name="recurring_action_edit">Edit</string>
+    <string name="recurring_action_mark_paid">Mark as Paid</string>
+    <string name="recurring_action_dismiss">Dismiss for This Period</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="recurring_confirm_paid_message">Record %1$s for %2$s as paid? This will deduct from your balance and advance the next due date.</string>
+    <string name="recurring_confirm_dismiss_message">Skip this occurrence of %1$s? No transaction will be recorded. The next due date will advance.</string>
+
+    <!-- Recurring dialog — shared transaction dialog repurposed -->
+    <string name="hint_start_date">Start Date</string>
+
+    <!-- Recurring empty state in transaction screen -->
+    <string name="recurring_empty_upcoming">No upcoming recurring transactions. Tap + and toggle Recurring to add one.</string>
+
+</resources>

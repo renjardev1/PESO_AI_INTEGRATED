@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/DashboardFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/AnalyticsFragment"
+        android:icon="@drawable/ic_chart"
+        android:title="Analytics" />
+
+    <item
+        android:id="@+id/TransactionsFragment"
+        android:icon="@drawable/ic_receipt"
+        android:title="Activities" />
+
+    <item
+        android:id="@+id/AdvisorFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="Advisor" />
+
+    <item
+        android:id="@+id/SettingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>

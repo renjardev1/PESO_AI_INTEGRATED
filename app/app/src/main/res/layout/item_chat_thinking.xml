@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_chat_thinking.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:gravity="start">
+
+    <TextView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:text="🤖"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#E0E0E0"
+        app:cardBackgroundColor="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/progressThinking"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateTint="#7C4DFF"/>
+
+            <TextView
+                android:id="@+id/tvThinking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI is thinking..."
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginStart="12dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

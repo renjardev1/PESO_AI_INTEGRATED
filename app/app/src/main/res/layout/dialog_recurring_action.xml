@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_recurring_action.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded"
+    android:padding="24dp">
+
+    <!-- Icon -->
+    <TextView
+        android:id="@+id/tvActionIcon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="🔁"
+        android:textSize="28sp"
+        android:background="@drawable/circle_background_blue"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Category + Amount -->
+    <TextView
+        android:id="@+id/tvActionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#1A1A1A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Next due date -->
+    <TextView
+        android:id="@+id/tvActionSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#888888"
+        android:textSize="13sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Edit -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActionEdit"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="Edit"
+        android:textColor="#2196F3"
+        android:textAllCaps="false"
+        app:strokeColor="#2196F3"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_edit"
+        app:iconTint="#2196F3"
+        app:iconGravity="textStart" />
+
+    <!-- Mark as Paid -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActionMarkPaid"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mark as Paid"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        app:backgroundTint="#4CAF50"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_check"
+        app:iconTint="#FFFFFF"
+        app:iconGravity="textStart" />
+
+    <!-- Dismiss -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActionDismiss"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Dismiss for This Period"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        app:backgroundTint="#FF9800"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_close"
+        app:iconTint="#FFFFFF"
+        app:iconGravity="textStart" />
+
+    <!-- Delete -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActionDelete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        app:backgroundTint="#F44336"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_delete"
+        app:iconTint="#FFFFFF"
+        app:iconGravity="textStart" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Cancel -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnActionCancel"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Cancel"
+        android:textColor="#9E9E9E"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

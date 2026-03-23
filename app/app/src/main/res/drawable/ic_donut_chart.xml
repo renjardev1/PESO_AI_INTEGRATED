@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_donut_chart.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="180">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M90,90m-80,0a80,80 0,1,1 160,0a80,80 0,1,1 -160,0"/>
+
+    <!-- Orange segment (34%) -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M90,10 A80,80 0,0,1 158,45 L90,90 Z"/>
+
+    <!-- Pink segment (28%) -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M158,45 A80,80 0,0,1 170,90 L90,90 Z"/>
+
+    <!-- Purple segment (22%) -->
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M170,90 A80,80 0,0,1 135,158 L90,90 Z"/>
+
+    <!-- Blue segment (16%) -->
+    <path
+        android:fillColor="#3F51B5"
+        android:pathData="M135,158 A80,80 0,0,1 90,10 L90,90 Z"/>
+
+    <!-- Center hole -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,90m-50,0a50,50 0,1,1 100,0a50,50 0,1,1 -100,0"/>
+
+</vector>
